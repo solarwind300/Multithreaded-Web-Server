@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Simple Web Server</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { color: #333; margin-bottom: 10px; }
+        .status { color: #28a745; font-weight: bold; }
+        .info { background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        code { background: #e9ecef; padding: 2px 6px; border-radius: 3px; }
+        ul { line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Web Server</h1>
+        <p class="status">✓ Server is running successfully!</p>
+        
+        <div class="info">
+            <h3>Server Features:</h3>
+            <ul>
+                <li>Multi-threaded request handling</li>
+                <li>HTTP/1.1 protocol support</li>
+                <li>GET and HEAD methods</li>
+                <li>Persistent connections</li>
+                <li>Conditional requests (304 Not Modified)</li>
+            </ul>
+        </div>
+        
+        <h3>Quick Test:</h3>
+        <ul>
+            <li><a href="/test.html">Test Page</a></li>
+            <li><a href="/nonexistent.html">404 Error Test</a></li>
+        </ul>
+        
+        <p>Place your files in the <code>www</code> directory to serve them.</p>
+    </div>
+</body>
+</html>
