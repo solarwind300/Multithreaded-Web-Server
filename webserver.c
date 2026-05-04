@@ -119,8 +119,8 @@ void signal_handler(int sig) {
     if (sig == SIGINT || sig == SIGTERM) {
         printf("\nShutting down server...\n");
         server_running = 0;
-		printf("Server stopped.\n");
-		exit(0);
+        printf("Server stopped.\n");
+        exit(0);
     }
 }
 
